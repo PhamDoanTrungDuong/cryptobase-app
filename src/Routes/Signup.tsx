@@ -17,7 +17,7 @@ const Signup: React.FC = () => {
     setErrors('')
     try {
       await signUp(email, password)
-	navigate('/');
+	navigate('/account');
     } catch (error: any) {
       setErrors(error.message)
     }
