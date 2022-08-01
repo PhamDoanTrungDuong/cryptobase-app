@@ -14,7 +14,6 @@ const Signup: React.FC = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault()
-    setErrors('')
     try {
       await signUp(email, password)
 	navigate('/account');
